@@ -1,4 +1,4 @@
-FROM registry.hub.docker.com/library/rocker/tidyverse:4.1.3
+FROM rocker/tidyverse:4.1.3
 
 COPY ./start.sh .
 RUN chmod +x start.sh
