@@ -298,7 +298,7 @@ objects:
     source:
       type: Git
       git:
-        uri: https://github.com/CSCfi/rstudio-openshift.git
+        uri: https://github.com/jason-jason-jason/rstudio-openshift.git
         ref: ${SOURCE_REPOSITORY_REF}
       contextDir: server
     strategy:
@@ -385,7 +385,6 @@ objects:
     resources:
       requests:
         storage: ${STORAGE_SIZE}
-    storageClassName: glusterfs-storage
   status: {}
 - apiVersion: v1
   kind: PersistentVolumeClaim
@@ -397,7 +396,6 @@ objects:
     resources:
       requests:
         storage: ${STORAGE_SIZE_TMP}
-    storageClassName: glusterfs-storage
   status: {}
 
 
